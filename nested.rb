@@ -41,8 +41,6 @@ def alan_kay_is_known_for
   return programmer_hash[:alan_kay][:known_for]
 end
 
-# puts alan_kay_is_known_for
-
 def dennis_ritchies_language
 	programmer_hash = 
  		{
@@ -68,7 +66,11 @@ def adding_matz
 #    :languages => ["LISP", "C"]
 # }
 
-	programmer_hash = 
+	programmer_hash =
+    	:yukihiro_matsumoto => {
+      :known_for => "Ruby",
+        :languages => ["LISP", "C"]
+    }
  		{
         :grace_hopper => {
           :known_for => "COBOL",
